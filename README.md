@@ -6,6 +6,7 @@ from tkinter import ttk
 import math
 
 # CORES
+
 co1 = '#000000'
 co2 = '#6F9FBD'
 co3 = '#38576B'
@@ -20,6 +21,7 @@ coOb2 = '#8B4513'
 coM = '#800000'
 
 #JANELA
+
 janela = Tk()
 janela.title("Calculadora IMC")
 janela.geometry("510x500")
@@ -35,6 +37,7 @@ l_altura = Label(frame_cima, text="<Calculadora IMC>", height=1, anchor=NE, font
 l_altura.place(x=120, y=5)
 
 #VARIAVEIS
+
 def calcular():
     altura = float(e_altura.get())
     peso = float(e_peso.get())
@@ -54,6 +57,7 @@ def calcular():
         label_response.config(text="Obesidade grau 3 (morbida).",bg=co1, fg=coM)
 
 #INTERFACE E POSIÇÕES
+
 l_altura = Label(frame_baixo, text="altura: ", height=1, anchor=NW, font=('Ivy 10 bold'), bg=co1, fg=co2)
 l_altura.place(x=120, y=20)
 
